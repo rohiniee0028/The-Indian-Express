@@ -1,35 +1,55 @@
 import { Box, Button, Container, Flex, HStack, Image, Text, VStack } from "@chakra-ui/react";
 import { BsList, BsSearch } from "react-icons/bs";
 import { FaEnvelopeOpenText, FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import SimpleImageSlider from "react-simple-image-slider";
 import styles from "./Navbar.module.css";
 import Sections from "./Sections";
+
+var objToday = new Date(),
+  weekday = new Array(
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+  ),
+  dayOfWeek = weekday[objToday.getDay()],
+  domEnder = (function () {
+    var a = objToday;
+    if (/1/.test(parseInt((a + "").charAt(0)))) return "th";
+    a = parseInt((a + "").charAt(1));
+    return 1 == a ? "" : 2 == a ? "" : 3 == a ? "" : "";
+  })(),
+  dayOfMonth =
+    today + (objToday.getDate() < 10)
+      ? "0" + objToday.getDate() + domEnder
+      : objToday.getDate() + domEnder,
+  months = new Array(
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ),
+  curMonth = months[objToday.getMonth()],
+  curYear = objToday.getFullYear();
+  var today = dayOfWeek + ", " + curMonth + " " + dayOfMonth + ",  " + curYear;
 
 export const Navbar = () => {
 
     const images = [
         { url: "https://tpc.googlesyndication.com/simgad/12692791964622314734" },
-        { url: "https://tpc.googlesyndication.com/simgad/12692791964622314734" },
-        { url: "images/3.jpg" },
     ];
-    // const ImageSlider = () => {
-    //     return (
-    //         <div>
-    //             <SimpleImageSlider
-    //                 width={896}
-    //                 height={504}
-    //                 images={images}
-    //                 showBullets={true}
-    //                 showNavs={true}
-    //             />
-    //         </div>
-    //     );
-    // }
-
-    const timeElapsed = Date.now();
-    const today = new Date(timeElapsed);
-    const x = today.toUTCString()
-    // console.log(x)
 
     return (
         <Container maxW='90%' mt="10px" style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
@@ -59,7 +79,7 @@ export const Navbar = () => {
             </Box>
             <Box style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }} >
                 <Box className={styles.date}>
-                    <Text fontSize="12px">{x}</Text>
+                    <Text fontSize="12px">{today}</Text>
                     <Text fontSize="12px">EPAPER | TODAY’S PAPER</Text>
                 </Box>
                 <Box className={styles.heading}>
@@ -80,7 +100,9 @@ export const Navbar = () => {
                 <Flex justifyContent="space-between" alignItems="center">
                     <Box fontSize="13px" color="black">
                         <HStack gap="10px" className={styles.row3}>
-                            <Text _hover={{ color: "#D70000" }}>Home</Text>
+                            <Link to="/">
+                                <Text _hover={{ color: "#D70000" }}>Home</Text>
+                            </Link>
                             <Text _hover={{ color: "#D70000" }}>Explained</Text>
                             <Text _hover={{ color: "#D70000" }}>Political Pulse</Text>
                             <Text _hover={{ color: "#D70000" }}>India</Text>

@@ -1,0 +1,81 @@
+{
+    "opinion" : [
+       {
+          "title":"G-20 presidency is an opportunity to position India as the voice of the Global South",
+          "image":"https://images.indianexpress.com/2013/12/sanaya-baru.jpg?w=210",
+          "name":"Sanjaya Baru"
+       },
+       {
+          "title":"Inching towards an Orwellian state: How the new draft telecom bill legally sanctions surveillance without safeguards",
+          "image":"https://images.indianexpress.com/2022/09/Tanmay-Singh.jpg?w=210",
+          "name":"Tanmay Singh"
+       },
+       {
+          "title":"Democracy in Kashmir: Indira's failure, Vajpayee's success",
+          "image":"https://images.indianexpress.com/2016/02/radha.jpg?w=210",
+          "name":"Radha Kumar"
+       },
+       {
+          "title":"Why SDPI, PFI's political wing is growing in Karnataka",
+          "image":"https://images.indianexpress.com/2013/12/chris.jpg?w=210",
+          "name":"Christophe Jaffrelot"
+       },
+       {
+          "title":"Humayun Khan (1932-2022), the man who stood for India-Pakistan dosti",
+          "image":"https://images.indianexpress.com/2014/03/amitabh-mattoo-e1483752969775.jpg?w=210",
+          "name":"Amitabh Mattoo"
+       },
+       {
+          "title":"What the Rajasthan political crisis highlights: Congress effectively has no high command",
+          "image":"https://images.indianexpress.com/2015/03/neeraja.jpg?w=210",
+          "name":"Neerja Chowdhury"
+       }
+    ],
+      "lifeStyle" : [
+       {
+          "title":"What are the different types of abortion procedures available in India?",
+          "image":"https://images.indianexpress.com/2022/09/abortion-1200.jpg?w=210"
+        
+       },
+       {
+          "title":"KL Rahul may not enjoy an 'ice bath' after 'tough' wickets, but here's how it helps",
+          "image":"https://images.indianexpress.com/2022/09/KL-Rahul_200_express-photo-by-kamleshwar-singh.jpg?w=210"
+          
+       },
+       {
+          "title":"Experts on why Supreme Court's ruling, granting abortion access to all married and unmarried women, is crucial&nbsp;",
+          "image":"https://images.indianexpress.com/2022/09/abortion.jpg?w=210"
+       },
+       {
+          "title":"This is what will happen to the floral tributes left by the public for Queen Elizabeth II",
+          "image":"https://images.indianexpress.com/2022/09/queen-flowers-1200.jpg?w=210"
+       },
+       {
+        "title":"At what age should people with family history of heart ailments get screened? What parameters should they get checked?",
+        "image":"https://images.indianexpress.com/2022/09/heart-health_1200_getty.jpg?w=210"
+     }
+  
+    ],
+     "world":[
+          {
+            "title":"Japan's army issues rare apology over sexual harassment case",
+            "image":"https://images.indianexpress.com/2022/09/Japan_Military_Sexual_Harassment.jpg?w=210"
+          },
+          {
+            "title":"Kremlin: 4 regions of Ukraine to be folded in Russia Friday",
+            "image":"https://images.indianexpress.com/2022/09/Untitled-design-15-2.jpg?w=210"
+          },
+          {
+            "title":"Self-exiled Hong Kong democrat sentenced to 3 1/2 years in jail in absentia",
+            "image":"https://images.indianexpress.com/2022/09/Hongkong_1200.jpg?w=210"
+          },
+          {
+            "title":"‘Where’s Jackie?’: Joe Biden asks if deceased lawmaker is at White House event",
+            "image":"https://images.indianexpress.com/2022/09/joe-biden-3.jpg?w=210"
+          },
+          {
+            "title":"Tensions in Iran Spill Across the Border Into Iraq",
+            "image":"https://images.indianexpress.com/2022/09/iran-woman-1.jpg?w=210"
+          }
+     ]
+  }
