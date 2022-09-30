@@ -1,4 +1,4 @@
-import { Box, Button, Container, Drawer, DrawerBody, DrawerContent, DrawerHeader, DrawerOverlay, Flex, HStack, ListItem, Radio, RadioGroup, Stack, Text, UnorderedList, useDisclosure, VStack } from "@chakra-ui/react"
+import { Box, Button,  Drawer, DrawerBody, DrawerContent, DrawerHeader, DrawerOverlay, Flex, HStack, ListItem,Text, UnorderedList, useDisclosure, VStack } from "@chakra-ui/react"
 import React from "react";
 import { BsList } from "react-icons/bs";
 import { ImCross } from "react-icons/im";
@@ -10,14 +10,6 @@ function Sections() {
 
   return (
     <>
-      {/* <RadioGroup defaultValue={placement} onChange={setPlacement}>
-          <Stack direction='row' mb='4'>
-            <Radio value='top'>Top</Radio>
-            <Radio value='right'>Right</Radio>
-            <Radio value='bottom'>Bottom</Radio>
-            <Radio value='left'>Left</Radio>
-          </Stack>
-        </RadioGroup> */}
       <Button _hover={{ bg: "#EFEFEF" }} bg="#EFEFEF" onClick={onOpen} gap="10px">
         <BsList />
         Section

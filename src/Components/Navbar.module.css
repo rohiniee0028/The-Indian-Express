@@ -19,5 +19,14 @@
 .trending{
     cursor: pointer;
 }
+.SearchIcondiv {
+    margin-left: 5%;
+    margin-right: 2%;
+}
+  
+.searchModal {
+    display: flex;
+    margin-top: 35px;
+  }
 
 

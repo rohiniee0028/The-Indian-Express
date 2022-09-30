@@ -1,9 +1,12 @@
-import { Box, Button, Container, Flex, HStack, Image, Text, VStack } from "@chakra-ui/react";
-import { BsList, BsSearch } from "react-icons/bs";
+import { Box, Button, Container, Flex, HStack, Image, Text} from "@chakra-ui/react";
+import { useContext } from "react";
+import { BsSearch } from "react-icons/bs";
 import { FaEnvelopeOpenText, FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import SimpleImageSlider from "react-simple-image-slider";
+import { AuthContext } from "../Context/AuthContext";
 import styles from "./Navbar.module.css";
+import { Search } from "./Search";
 import Sections from "./Sections";
 
 var objToday = new Date(),
@@ -51,6 +54,8 @@ export const Navbar = () => {
         { url: "https://tpc.googlesyndication.com/simgad/12692791964622314734" },
     ];
 
+    const {authState} = useContext(AuthContext);
+
     return (
         <Container maxW='90%' mt="10px" style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
             <Box style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
@@ -58,8 +63,8 @@ export const Navbar = () => {
                     <Box >
                        <Sections />
                     </Box>
-                    <Box bg="#EFEFEF" px=".75rem" py=".7rem" borderRadius="5px">
-                        <BsSearch />
+                    <Box bg="#EFEFEF"  borderRadius="5px">
+                        <Search />
                     </Box>
                 </Flex>
                 <Box fontSize="13px" className={styles.language}>
@@ -112,7 +117,9 @@ export const Navbar = () => {
                             <Text _hover={{ color: "#D70000" }}>Lifestyle</Text>
                             <Text _hover={{ color: "#D70000" }}>Technology</Text>
                             <Text _hover={{ color: "#D70000" }}>Videos</Text>
-                            <Text _hover={{ color: "#D70000" }}>Sports</Text>
+                            <Link to="/sports">
+                               <Text _hover={{ color: "#D70000" }}>Sports</Text>
+                            </Link>
                             <Text _hover={{ color: "#D70000" }}>Audio</Text>
                             <Text _hover={{ color: "#D70000" }}>Education</Text>
                             <Text _hover={{ color: "#D70000" }}>Premium</Text>
@@ -121,7 +128,9 @@ export const Navbar = () => {
                     </Box>
                     <Box style={{ display: "flex", justifyContent: "center", alignItems: "flex-end", gap: "10px" }}>
                         <Button bg="#FFB900" fontSize="14px" colorScheme="#FFB900" color="black">SUBSCRIBE</Button>
-                        <Button bg="#3B4057" color="white" fontSize="14px" colorScheme="#3B4057">Sign in</Button>
+                        <Link to="/login"  rel="noreferrer">
+                           <Button bg="#3B4057" color="white" fontSize="14px" colorScheme="#3B4057">{!authState ? "Sign in" : "Sign out"}</Button>
+                        </Link>
                     </Box>
                 </Flex>
             </Box>

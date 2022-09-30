@@ -1,15 +1,19 @@
-import { Box, Heading, HStack, Image, ListItem, Text, UnorderedList, VStack } from "@chakra-ui/react"
+import { Box, Heading, HStack, Image, ListItem, Select, Text, UnorderedList, VStack } from "@chakra-ui/react"
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Form, Link } from "react-router-dom";
 import SimpleImageSlider from "react-simple-image-slider";
 import data from "../db.json";
 import { DemoCarousel } from "../Components/Carousel";
+import { useContext } from "react";
+import { AuthContext } from "../Context/AuthContext";
 
 export const Home = () => {
 
     const [topNews, setTopNews] = useState([]);
     const [latestNews, setLatestNews] = useState([]);
+    const [countryNews, setCountryNews] = useState([]);
+    const [countryName, setCountryName] = useState("in");
 
     const urlImg = "https://images.pexels.com/photos/414837/pexels-photo-414837.jpeg?auto=compress&cs=tinysrgb&w=600";
 
@@ -17,6 +21,26 @@ export const Home = () => {
         { url: "https://images.indianexpress.com/2021/08/300x1001.gif" },
         { url: "https://images.indianexpress.com/2021/08/300x100.gif" }
     ];
+
+    const handleOnChange = (e) => {
+        setCountryName(e.target.value);
+        // console.log(countryName);
+    };
+    useEffect(() => {
+        axios
+            .get(
+                `https://newsapi.org/v2/top-headlines?country=${countryName}&apiKey=34c7de93f7594b079eec28988567d583`
+            )
+            .then((res) => {
+                setCountryNews(res.data.articles);
+                console.log(countryNews);
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+    }, [countryName]);
+
+    let j = 1;
 
     useEffect(() => {
         document.title = "Latest News, India News, Breaking News, Today's News Headlines Online, English News Top Stories, Coronavirus News, IPL 2022 Updates|The Indian Express";
@@ -28,15 +52,20 @@ export const Home = () => {
                 console.log(res);
                 setTopNews(res.data.articles);
             })
+            .catch(function (error) {
+                console.log(error);
+            });
     }, [])
 
     useEffect(() => {
         axios.get(
-                "https://newsdata.io/api/1/news?apikey=pub_8388f9e9492da67b017e34d4bdd4eca23d1b&country=in&language=en&category=top"
-            )
+            "https://newsdata.io/api/1/news?apikey=pub_8388f9e9492da67b017e34d4bdd4eca23d1b&country=in&language=en&category=top"
+        )
             .then((res) => {
                 console.log(res);
                 setLatestNews(res.data.results);
+            }).catch(function (error) {
+                console.log(error);
             });
     }, [])
 
@@ -122,6 +151,53 @@ export const Home = () => {
                         <Heading color="#FFC200" fontSize="20px" >BEST OF PREMIUM</Heading>
                         <DemoCarousel />
                     </Box>
+                    <Box>
+                        <Box textAlign="left" style={{ display: "flex", gap: "10px", alignItems: "center", justifyContent: "space-between" }}>
+                            <Heading fontSize="20px">{countryName.toUpperCase()} NEWS</Heading>
+                            <Select w="160px" pr="10px" onChange={(e) => handleOnChange(e)}>
+                                <option value="br">Brazil</option>
+                                <option value="ch">China</option>
+                                <option value="fr">France</option>
+                                <option value="in" selected>
+                                    India
+                                </option>
+                                <option value="it">Italy</option>
+                                <option value="jp">Japan</option>
+                                <option value="kr">Korea</option>
+                                <option value="nz">New Zeeland</option>
+                                <option value="rs">Russia</option>
+                                <option value="ae">United Arab Emirates</option>
+                                <option value="us">United States of America</option>
+                            </Select>
+                        </Box>
+                        {
+                            countryNews.map((cn) => {
+                                if (j < 2) {
+                                    j++;
+                                    return (
+                                        <Box style={{ display: "flex", justifyContent: "space-between", textAlign: "left", marginTop: "10px", paddingRight: "10px" }}>
+                                            <Box w="50%">
+                                                <Image src={cn.urlToImage} alt="img-1" />
+                                                <Text fontWeight="bold">{cn.title}</Text>
+                                            </Box>
+                                            <Box w="45%">
+                                                <Box borderBottom="1px dotted gray" pb="10px">
+                                                    <Text fontSize="14px">{cn.content}</Text>
+                                                </Box>
+                                                <Box pt="10px">
+                                                    <Text  fontSize="14px">{cn.description}</Text>
+                                                </Box>
+                                            </Box>
+                                        </Box>
+                                    )
+                                } else {
+                                    j++;
+                                    return;
+                                }
+
+                            })
+                        }
+                    </Box>
                 </Box>
                 {/* right -div going------------------- */}
                 <Box w="32%" pl="1rem" mt="10px">
@@ -141,7 +217,7 @@ export const Home = () => {
                     <Box textAlign="left" mb="25px">
                         <Heading fontSize="16px" mb='2px' pb="10px" borderBottom="1px dotted gray">THE EXPRESS VIEW</Heading>
                         <Box style={{ display: "flex", gap: "20px", borderTop: "1px dotted gray" }} pt="0.5rem" pb="0.5rem">
-                            <Text>After the ban: The political challenge posed by PFI still needs tackling</Text>
+                            <Text fontSize="14px">After the ban: The political challenge posed by PFI still needs tackling</Text>
                             <Image src="https://images.indianexpress.com/2022/09/edit-28.jpg?w=210" width="100px" alt="ban-img" />
                         </Box>
                     </Box>
@@ -149,7 +225,7 @@ export const Home = () => {
                         <Heading fontSize="16px" mb='2px' pb="10px" borderBottom="1px dotted gray">OPINION </Heading>
                         {
                             data.opinion.map((el) => (
-                                <Box style={{ display: "flex", flexDirection: "column", gap: "20px", borderTop: "1px dotted gray", borderBottom: "1px dotted gray" }} pt="0.5rem" pb="0.5rem">
+                                <Box key={el.id} style={{ display: "flex", flexDirection: "column", gap: "20px", borderTop: "1px dotted gray", borderBottom: "1px dotted gray" }} pt="0.5rem" pb="0.5rem">
                                     <HStack gap="5px">
                                         <Text fontSize="16px">{el.title}</Text>
                                         <Image src={el.image} width="60px" borderRadius="50%" alt="ban-img" />
@@ -168,8 +244,8 @@ export const Home = () => {
                         <Heading fontSize="16px" mb='2px' pb="10px" borderBottom="1px dotted gray">LIFESTYLE</Heading>
                         {
                             data.lifeStyle.map((item) => (
-                                <Box style={{ display: "flex", gap: "20px", borderTop: "1px dotted gray" }} pt="0.5rem" pb="0.5rem">
-                                    <Text>{item.title}</Text>
+                                <Box key={item.id} style={{ display: "flex", gap: "20px", borderTop: "1px dotted gray" }} pt="0.5rem" pb="0.5rem">
+                                    <Text fontSize="14px">{item.title}</Text>
                                     <Image src={item.image} width="100px" height="80px" alt="lifestyle-img" />
                                 </Box>
                             ))
@@ -179,8 +255,8 @@ export const Home = () => {
                         <Heading fontSize="16px" mb='2px' pb="10px" borderBottom="1px dotted gray">WORLD</Heading>
                         {
                             data.world.map((news) => (
-                                <Box style={{ display: "flex", gap: "20px", borderTop: "1px dotted gray" }} pt="0.5rem" pb="0.5rem">
-                                    <Text>{news.title}</Text>
+                                <Box key={news.id} style={{ display: "flex", gap: "20px", borderTop: "1px dotted gray" }} pt="0.5rem" pb="0.5rem">
+                                    <Text fontSize="14px">{news.title}</Text>
                                     <Image src={news.image} width="100px" height="80px" alt="world-img" />
                                 </Box>
                             ))
