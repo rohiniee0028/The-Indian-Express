@@ -2,6 +2,7 @@ import { Box, Button,  Drawer, DrawerBody, DrawerContent, DrawerHeader, DrawerOv
 import React from "react";
 import { BsList } from "react-icons/bs";
 import { ImCross } from "react-icons/im";
+import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
 
 function Sections() {
@@ -51,7 +52,11 @@ function Sections() {
                 </VStack>
                 <VStack>
                   <UnorderedList style={{listStyle:"none",cursor:"pointer"}}>
-                    <ListItem>Sports</ListItem>
+                    <ListItem>
+                      <Link to="/sports">
+                         Sports
+                      </Link>
+                    </ListItem>
                     <ListItem>World</ListItem>
                     <ListItem>Business</ListItem>
                     <ListItem>Entertainment</ListItem>
