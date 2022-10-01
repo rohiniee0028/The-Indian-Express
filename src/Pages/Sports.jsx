@@ -2,6 +2,7 @@ import { Box, Breadcrumb, BreadcrumbItem, BreadcrumbLink, Button, Grid, GridItem
 import { useEffect, useState } from "react";
 import SlideDiv from "../Components/SlideDiv"
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 export const Sports = () => {
     const [data, setData] = useState([]);
@@ -40,37 +41,37 @@ export const Sports = () => {
                     </Text>
                     <Wrap spacing={-5} _hover>
                         <WrapItem>
-                            <Button fontSize="13px" fontWeight="bold" color="#6A6A6A" variant="ghost" _hover={{color:"#A32020"}}>
+                            <Button fontSize="13px" fontWeight="bold" color="#6A6A6A" variant="ghost" _hover={{ color: "#A32020" }}>
                                 CRICKET
                             </Button>
                         </WrapItem>
                         <WrapItem>
-                            <Button fontSize="13px" fontWeight="bold" color="#6A6A6A" variant="ghost" _hover={{color:"#A32020"}}>
+                            <Button fontSize="13px" fontWeight="bold" color="#6A6A6A" variant="ghost" _hover={{ color: "#A32020" }}>
                                 FOOTBALL
                             </Button>
                         </WrapItem>
                         <WrapItem>
-                            <Button fontSize="13px" fontWeight="bold" color="#6A6A6A" variant="ghost" _hover={{color:"#A32020"}}>
+                            <Button fontSize="13px" fontWeight="bold" color="#6A6A6A" variant="ghost" _hover={{ color: "#A32020" }}>
                                 TENNIS
                             </Button>
                         </WrapItem>
                         <WrapItem>
-                            <Button fontSize="13px" fontWeight="bold" color="#6A6A6A" variant="ghost" _hover={{color:"#A32020"}}>
+                            <Button fontSize="13px" fontWeight="bold" color="#6A6A6A" variant="ghost" _hover={{ color: "#A32020" }}>
                                 WWE
                             </Button>
                         </WrapItem>
                         <WrapItem>
-                            <Button fontSize="13px" fontWeight="bold" color="#6A6A6A" variant="ghost" _hover={{color:"#A32020"}}>
+                            <Button fontSize="13px" fontWeight="bold" color="#6A6A6A" variant="ghost" _hover={{ color: "#A32020" }}>
                                 PHOTOS
                             </Button>
                         </WrapItem>
                         <WrapItem>
-                            <Button  fontSize="13px" fontWeight="bold" color="#6A6A6A" variant="ghost" _hover={{color:"#A32020"}}>
+                            <Button fontSize="13px" fontWeight="bold" color="#6A6A6A" variant="ghost" _hover={{ color: "#A32020" }}>
                                 PODCAST
                             </Button>
                         </WrapItem>
                         <WrapItem>
-                            <Button fontSize="13px" fontWeight="bold" color="#6A6A6A" variant="ghost" _hover={{color:"#A32020"}}>
+                            <Button fontSize="13px" fontWeight="bold" color="#6A6A6A" variant="ghost" _hover={{ color: "#A32020" }}>
                                 EXPLAINED
                             </Button>
                         </WrapItem>
@@ -133,32 +134,34 @@ export const Sports = () => {
             <Box w="93%" m="auto" textAlign="left" borderTop="3px solid gray" mt="30px">
                 {
                     data.map((value) => (
-                        <Grid
-                            h="200px"
-                            templateRows="repeat(2, 1fr)"
-                            templateColumns="repeat(5, 1fr)"
-                            gap={1}
-                            paddingTop={10}
-                            paddingBottom={10}
-                            borderBottom="1px"
-                            borderColor="gray.400"
-                        >
-                            <GridItem rowSpan={1} colSpan={1}>
-                                <Image
-                                    boxSize="300px"
-                                    height="auto"
-                                    src={value.urlToImage ? value.urlToImage : urlImg}
-                                    alt="SportNews"
-                                />
-                            </GridItem>
-                            <GridItem colSpan={4} bg="white">
-                                <Stack>
-                                    <Heading fontSize="20px">{value.title}</Heading>
-                                    <Text fontSize="12">{value.publishedAt}</Text>
-                                    <Text>{value.description}</Text>
-                                </Stack>
-                            </GridItem>
-                        </Grid>
+                        <Link to={`/sports/${value.source.name}`}>
+                            <Grid
+                                h="200px"
+                                templateRows="repeat(2, 1fr)"
+                                templateColumns="repeat(5, 1fr)"
+                                gap={1}
+                                paddingTop={10}
+                                paddingBottom={10}
+                                borderBottom="1px"
+                                borderColor="gray.400"
+                            >
+                                <GridItem rowSpan={1} colSpan={1}>
+                                    <Image
+                                        boxSize="300px"
+                                        height="auto"
+                                        src={value.urlToImage ? value.urlToImage : urlImg}
+                                        alt="SportNews"
+                                    />
+                                </GridItem>
+                                <GridItem colSpan={4} bg="white">
+                                    <Stack>
+                                        <Heading fontSize="20px">{value.title}</Heading>
+                                        <Text fontSize="12">{value.publishedAt}</Text>
+                                        <Text>{value.description}</Text>
+                                    </Stack>
+                                </GridItem>
+                            </Grid>
+                        </Link>
                     ))
                 }
             </Box>

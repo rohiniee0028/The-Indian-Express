@@ -6,6 +6,8 @@ import {Route, Routes} from "react-router-dom";
 import { Home } from './Pages/Home';
 import { Login } from './Pages/Login';
 import { Sports } from './Pages/Sports';
+import PrivateRoute from './Components/PrivateRoute';
+import { SportsDetail } from './Pages/SportsDetail';
 
 function App() {
   return (
@@ -16,8 +18,8 @@ function App() {
         {/* <Route path="/Entertainment" element={<MainEntertainment />}></Route>
         <Route path="/Education" element={<Education />}></Route>
         <Route path="/Cities" element={<Cities />}></Route> */}
-        <Route path="/sports" element={<Sports />}></Route>
-        {/* <Route path="/Details" element={<DetailedNews />}></Route> */}
+        <Route path="/sports" element={<PrivateRoute><Sports /></PrivateRoute>}></Route>
+        <Route path="/sports/:detail_id" element={<PrivateRoute><SportsDetail /></PrivateRoute>}></Route>
         <Route path="/Login" element={<Login />}></Route>
         {/* <Route path="/Cities/NewPage" element={<NewPage />}></Route> */}
       </Routes>
