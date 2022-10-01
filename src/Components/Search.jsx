@@ -1,15 +1,11 @@
 import { SearchIcon } from "@chakra-ui/icons";
 import { Button, Input, Modal, ModalBody, ModalCloseButton, ModalContent, ModalOverlay, useDisclosure } from "@chakra-ui/react";
+import { useState } from "react";
 import { useRef } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import style from "./Navbar.module.css";
 export const Search=()=>{
-
-  const navigate = useNavigate();
-
-  const goToSearch=()=>{
-     navigate("/sports");
-  }
+  const [link , setLink] = useState("")
 
     const {
         isOpen: Search,
@@ -41,8 +37,10 @@ export const Search=()=>{
                   focusBorderColor="black"
                   borderRadius="none"
                 />
-                <Button bg="black" colorScheme="white" borderRadius="none" onClick={goToSearch}>
-                   SEARCH
+                <Button bg="black" colorScheme="white" borderRadius="none" onClick={CloseSearch}>
+                  <Link to="/sports">
+                     SEARCH
+                  </Link>
                 </Button>
               </div>
             </ModalBody>

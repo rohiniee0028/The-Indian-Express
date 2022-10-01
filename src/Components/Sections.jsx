@@ -53,7 +53,7 @@ function Sections() {
                 <VStack>
                   <UnorderedList style={{listStyle:"none",cursor:"pointer"}}>
                     <ListItem>
-                      <Link to="/sports">
+                      <Link to="/sports" onClick={onClose}>
                          Sports
                       </Link>
                     </ListItem>
@@ -67,7 +67,11 @@ function Sections() {
                     <ListItem>Health</ListItem>
                     <ListItem>Lifestyle</ListItem>
                     <ListItem>Technology</ListItem>
-                    <ListItem>Education</ListItem>
+                    <ListItem>
+                      <Link to="/education" onClick={onClose}>
+                        Education
+                      </Link>
+                    </ListItem>
                   </UnorderedList>
                 </VStack>
                 <VStack>

@@ -70,7 +70,7 @@ export const Home = () => {
     }, [])
 
     return (
-        <Box w="65%" margin="auto">
+        <Box w="65%" margin="auto" mb="50px">
             <Box w="100%" border="1px solid gray" margin="auto" p="1rem">
                 <HStack>
                     <Image
@@ -128,8 +128,8 @@ export const Home = () => {
                         <Box w="50%" textAlign="left">
                             <Heading fontSize="16px" p="20px 0px 5px">TOP NEWS</Heading>
                             {
-                                topNews.map((el) => (
-                                    <Box style={{ display: "flex", gap: "20px", borderTop: "1px dotted gray", borderBottom: "1px dotted gray" }} pt="0.5rem" pb="0.5rem">
+                                topNews.map((el,index) => (
+                                    <Box key={index} style={{ display: "flex", gap: "20px", borderTop: "1px dotted gray", borderBottom: "1px dotted gray" }} pt="0.5rem" pb="0.5rem">
                                         <Text fontSize="14px">{el.title}</Text>
                                         <Image src={el.urlToImage ? el.urlToImage : urlImg} width="108px" height="60px" alt="x-x" />
                                     </Box>
@@ -139,8 +139,8 @@ export const Home = () => {
                         <Box w="50%" textAlign="left" bg="#F2F2F2" p="5px 15px 35px">
                             <Heading fontSize="16px" mt="15px">LATEST NEWS</Heading>
                             {
-                                latestNews.map((el) => (
-                                    <Box style={{ display: "flex", gap: "20px", borderBottom: "1px dotted gray" }} pt="0.5rem" pb="0.5rem" >
+                                latestNews.map((el,index) => (
+                                    <Box key={index} style={{ display: "flex", gap: "20px", borderBottom: "1px dotted gray" }} pt="0.5rem" pb="0.5rem" >
                                         <Text>{el.title}</Text>
                                     </Box>
                                 ))
@@ -171,11 +171,11 @@ export const Home = () => {
                             </Select>
                         </Box>
                         {
-                            countryNews.map((cn) => {
-                                if (j < 2) {
+                            countryNews.map((cn,index) => {
+                                if (j < 3) {
                                     j++;
                                     return (
-                                        <Box style={{ display: "flex", justifyContent: "space-between", textAlign: "left", marginTop: "10px", paddingRight: "10px" }}>
+                                        <Box key={index} style={{ display: "flex", justifyContent: "space-between", textAlign: "left", marginTop: "10px", paddingRight: "10px" }}>
                                             <Box w="50%">
                                                 <Image src={cn.urlToImage} alt="img-1" />
                                                 <Text fontWeight="bold">{cn.title}</Text>

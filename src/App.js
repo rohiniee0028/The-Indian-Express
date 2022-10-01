@@ -8,6 +8,8 @@ import { Login } from './Pages/Login';
 import { Sports } from './Pages/Sports';
 import PrivateRoute from './Components/PrivateRoute';
 import { SportsDetail } from './Pages/SportsDetail';
+import {Education} from './Pages/Education';
+import { EducationDetail } from './Pages/EducationDetail';
 
 function App() {
   return (
@@ -15,13 +17,11 @@ function App() {
        <Navbar/>
        <Routes>
         <Route path="/" element={<Home />}></Route>
-        {/* <Route path="/Entertainment" element={<MainEntertainment />}></Route>
-        <Route path="/Education" element={<Education />}></Route>
-        <Route path="/Cities" element={<Cities />}></Route> */}
+        <Route path="/education" element={<PrivateRoute><Education /></PrivateRoute>}></Route>
+        <Route path="/educationDetail" element={<PrivateRoute><EducationDetail /></PrivateRoute>}></Route>
         <Route path="/sports" element={<PrivateRoute><Sports /></PrivateRoute>}></Route>
-        <Route path="/sports/:detail_id" element={<PrivateRoute><SportsDetail /></PrivateRoute>}></Route>
+        <Route path="/sportsDetail" element={<PrivateRoute><SportsDetail /></PrivateRoute>}></Route>
         <Route path="/Login" element={<Login />}></Route>
-        {/* <Route path="/Cities/NewPage" element={<NewPage />}></Route> */}
       </Routes>
        <Footer/>
     </div>

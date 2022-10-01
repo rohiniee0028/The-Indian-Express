@@ -1,0 +1,1 @@
+export const AddItemEdu=(item)=>({type:"ADD_ITEM_TO_EDUCATION", payload:item}) ;

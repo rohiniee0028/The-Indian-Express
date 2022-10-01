@@ -1,4 +1,4 @@
-import { Box, Button, Container, Flex, HStack, Image, Text} from "@chakra-ui/react";
+import { Box, Button, Container, Flex, HStack, Image, Text } from "@chakra-ui/react";
 import { useContext } from "react";
 import { BsSearch } from "react-icons/bs";
 import { FaEnvelopeOpenText, FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
@@ -10,43 +10,43 @@ import { Search } from "./Search";
 import Sections from "./Sections";
 
 var objToday = new Date(),
-  weekday = new Array(
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday"
-  ),
-  dayOfWeek = weekday[objToday.getDay()],
-  domEnder = (function () {
-    var a = objToday;
-    if (/1/.test(parseInt((a + "").charAt(0)))) return "th";
-    a = parseInt((a + "").charAt(1));
-    return 1 == a ? "" : 2 == a ? "" : 3 == a ? "" : "";
-  })(),
-  dayOfMonth =
-    today + (objToday.getDate() < 10)
-      ? "0" + objToday.getDate() + domEnder
-      : objToday.getDate() + domEnder,
-  months = new Array(
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
-  ),
-  curMonth = months[objToday.getMonth()],
-  curYear = objToday.getFullYear();
-  var today = dayOfWeek + ", " + curMonth + " " + dayOfMonth + ",  " + curYear;
+    weekday = new Array(
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+    ),
+    dayOfWeek = weekday[objToday.getDay()],
+    domEnder = (function () {
+        var a = objToday;
+        if (/1/.test(parseInt((a + "").charAt(0)))) return "th";
+        a = parseInt((a + "").charAt(1));
+        return 1 == a ? "" : 2 == a ? "" : 3 == a ? "" : "";
+    })(),
+    dayOfMonth =
+        today + (objToday.getDate() < 10)
+            ? "0" + objToday.getDate() + domEnder
+            : objToday.getDate() + domEnder,
+    months = new Array(
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+    ),
+    curMonth = months[objToday.getMonth()],
+    curYear = objToday.getFullYear();
+var today = dayOfWeek + ", " + curMonth + " " + dayOfMonth + ",  " + curYear;
 
 export const Navbar = () => {
 
@@ -54,16 +54,16 @@ export const Navbar = () => {
         { url: "https://tpc.googlesyndication.com/simgad/12692791964622314734" },
     ];
 
-    const {authState} = useContext(AuthContext);
+    const { authState } = useContext(AuthContext);
 
     return (
         <Container maxW='90%' mt="10px" style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
             <Box style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                 <Flex display="flex" gap="15px" alignItems="center">
                     <Box >
-                       <Sections />
+                        <Sections />
                     </Box>
-                    <Box bg="#EFEFEF"  borderRadius="5px">
+                    <Box bg="#EFEFEF" borderRadius="5px">
                         <Search />
                     </Box>
                 </Flex>
@@ -118,18 +118,20 @@ export const Navbar = () => {
                             <Text _hover={{ color: "#D70000" }}>Technology</Text>
                             <Text _hover={{ color: "#D70000" }}>Videos</Text>
                             <Link to="/sports">
-                               <Text _hover={{ color: "#D70000" }}>Sports</Text>
+                                <Text _hover={{ color: "#D70000" }}>Sports</Text>
                             </Link>
                             <Text _hover={{ color: "#D70000" }}>Audio</Text>
-                            <Text _hover={{ color: "#D70000" }}>Education</Text>
+                            <Link to="/education">
+                                <Text _hover={{ color: "#D70000" }}>Education</Text>
+                            </Link>
                             <Text _hover={{ color: "#D70000" }}>Premium</Text>
                             <Text _hover={{ color: "#D70000" }}>Investigations</Text>
                         </HStack>
                     </Box>
                     <Box style={{ display: "flex", justifyContent: "center", alignItems: "flex-end", gap: "10px" }}>
                         <Button bg="#FFB900" fontSize="14px" colorScheme="#FFB900" color="black">SUBSCRIBE</Button>
-                        <Link to="/login"  rel="noreferrer">
-                           <Button bg="#3B4057" color="white" fontSize="14px" colorScheme="#3B4057">{!authState ? "Sign in" : "Sign out"}</Button>
+                        <Link to="/login" rel="noreferrer">
+                            <Button bg="#3B4057" color="white" fontSize="14px" colorScheme="#3B4057">{!authState ? "Sign in" : "Sign out"}</Button>
                         </Link>
                     </Box>
                 </Flex>

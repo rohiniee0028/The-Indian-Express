@@ -1,97 +1,296 @@
 {
-    "opinion" : [
-       {
-           "id":"1",
-          "title":"G-20 presidency is an opportunity to position India as the voice of the Global South",
-          "image":"https://images.indianexpress.com/2013/12/sanaya-baru.jpg?w=210",
-          "name":"Sanjaya Baru"
-       },
-       {
-        "id":"2",
-          "title":"Inching towards an Orwellian state: How the new draft telecom bill legally sanctions surveillance without safeguards",
-          "image":"https://images.indianexpress.com/2022/09/Tanmay-Singh.jpg?w=210",
-          "name":"Tanmay Singh"
-       },
-       { 
-         "id":"3",
-          "title":"Democracy in Kashmir: Indira's failure, Vajpayee's success",
-          "image":"https://images.indianexpress.com/2016/02/radha.jpg?w=210",
-          "name":"Radha Kumar"
-       },
-       {
-        "id":"4",
-          "title":"Why SDPI, PFI's political wing is growing in Karnataka",
-          "image":"https://images.indianexpress.com/2013/12/chris.jpg?w=210",
-          "name":"Christophe Jaffrelot"
-       },
-       {
-          "id":"5",
-          "title":"Humayun Khan (1932-2022), the man who stood for India-Pakistan dosti",
-          "image":"https://images.indianexpress.com/2014/03/amitabh-mattoo-e1483752969775.jpg?w=210",
-          "name":"Amitabh Mattoo"
-       },
-       {  
-         "id":"6",
-          "title":"What the Rajasthan political crisis highlights: Congress effectively has no high command",
-          "image":"https://images.indianexpress.com/2015/03/neeraja.jpg?w=210",
-          "name":"Neerja Chowdhury"
-       }
-    ],
-      "lifeStyle" : [
-       {  
-          "id":"7",
-          "title":"What are the different types of abortion procedures available in India?",
-          "image":"https://images.indianexpress.com/2022/09/abortion-1200.jpg?w=210"
-        
-       },
-       {  
-          "id":"8",
-          "title":"KL Rahul may not enjoy an 'ice bath' after 'tough' wickets, but here's how it helps",
-          "image":"https://images.indianexpress.com/2022/09/KL-Rahul_200_express-photo-by-kamleshwar-singh.jpg?w=210"
-          
-       },
-       {
-          "id":"9",
-          "title":"Experts on why Supreme Court's ruling, granting abortion access to all married and unmarried women, is crucial&nbsp;",
-          "image":"https://images.indianexpress.com/2022/09/abortion.jpg?w=210"
-       },
-       { 
-          "id":"10",
-          "title":"This is what will happen to the floral tributes left by the public for Queen Elizabeth II",
-          "image":"https://images.indianexpress.com/2022/09/queen-flowers-1200.jpg?w=210"
-       },
-       {
-        "id":"11",
-        "title":"At what age should people with family history of heart ailments get screened? What parameters should they get checked?",
-        "image":"https://images.indianexpress.com/2022/09/heart-health_1200_getty.jpg?w=210"
-     }
-  
-    ],
-     "world":[
-          { 
-            "id":"12",
-            "title":"Japan's army issues rare apology over sexual harassment case",
-            "image":"https://images.indianexpress.com/2022/09/Japan_Military_Sexual_Harassment.jpg?w=210"
-          },
-          { 
-            "id":"13",
-            "title":"Kremlin: 4 regions of Ukraine to be folded in Russia Friday",
-            "image":"https://images.indianexpress.com/2022/09/Untitled-design-15-2.jpg?w=210"
-          },
-          { 
-            "id":"14",
-            "title":"Self-exiled Hong Kong democrat sentenced to 3 1/2 years in jail in absentia",
-            "image":"https://images.indianexpress.com/2022/09/Hongkong_1200.jpg?w=210"
-          },
-          { 
-            "id":"15",
-            "title":"‘Where’s Jackie?’: Joe Biden asks if deceased lawmaker is at White House event",
-            "image":"https://images.indianexpress.com/2022/09/joe-biden-3.jpg?w=210"
-          },
-          { 
-            "id":"16",
-            "title":"Tensions in Iran Spill Across the Border Into Iraq",
-            "image":"https://images.indianexpress.com/2022/09/iran-woman-1.jpg?w=210"
-          }
-     ]
-  }
+   "opinion": [
+      {
+         "id": "1",
+         "title": "G-20 presidency is an opportunity to position India as the voice of the Global South",
+         "image": "https://images.indianexpress.com/2013/12/sanaya-baru.jpg?w=210",
+         "name": "Sanjaya Baru"
+      },
+      {
+         "id": "2",
+         "title": "Inching towards an Orwellian state: How the new draft telecom bill legally sanctions surveillance without safeguards",
+         "image": "https://images.indianexpress.com/2022/09/Tanmay-Singh.jpg?w=210",
+         "name": "Tanmay Singh"
+      },
+      {
+         "id": "3",
+         "title": "Democracy in Kashmir: Indira's failure, Vajpayee's success",
+         "image": "https://images.indianexpress.com/2016/02/radha.jpg?w=210",
+         "name": "Radha Kumar"
+      },
+      {
+         "id": "4",
+         "title": "Why SDPI, PFI's political wing is growing in Karnataka",
+         "image": "https://images.indianexpress.com/2013/12/chris.jpg?w=210",
+         "name": "Christophe Jaffrelot"
+      },
+      {
+         "id": "5",
+         "title": "Humayun Khan (1932-2022), the man who stood for India-Pakistan dosti",
+         "image": "https://images.indianexpress.com/2014/03/amitabh-mattoo-e1483752969775.jpg?w=210",
+         "name": "Amitabh Mattoo"
+      },
+      {
+         "id": "6",
+         "title": "What the Rajasthan political crisis highlights: Congress effectively has no high command",
+         "image": "https://images.indianexpress.com/2015/03/neeraja.jpg?w=210",
+         "name": "Neerja Chowdhury"
+      }
+   ],
+   "lifeStyle": [
+      {
+         "id": "7",
+         "title": "What are the different types of abortion procedures available in India?",
+         "image": "https://images.indianexpress.com/2022/09/abortion-1200.jpg?w=210"
+      },
+      {
+         "id": "8",
+         "title": "KL Rahul may not enjoy an 'ice bath' after 'tough' wickets, but here's how it helps",
+         "image": "https://images.indianexpress.com/2022/09/KL-Rahul_200_express-photo-by-kamleshwar-singh.jpg?w=210"
+      },
+      {
+         "id": "9",
+         "title": "Experts on why Supreme Court's ruling, granting abortion access to all married and unmarried women, is crucial&nbsp;",
+         "image": "https://images.indianexpress.com/2022/09/abortion.jpg?w=210"
+      },
+      {
+         "id": "10",
+         "title": "This is what will happen to the floral tributes left by the public for Queen Elizabeth II",
+         "image": "https://images.indianexpress.com/2022/09/queen-flowers-1200.jpg?w=210"
+      },
+      {
+         "id": "11",
+         "title": "At what age should people with family history of heart ailments get screened? What parameters should they get checked?",
+         "image": "https://images.indianexpress.com/2022/09/heart-health_1200_getty.jpg?w=210"
+      }
+   ],
+   "world": [
+      {
+         "id": "12",
+         "title": "Japan's army issues rare apology over sexual harassment case",
+         "image": "https://images.indianexpress.com/2022/09/Japan_Military_Sexual_Harassment.jpg?w=210"
+      },
+      {
+         "id": "13",
+         "title": "Kremlin: 4 regions of Ukraine to be folded in Russia Friday",
+         "image": "https://images.indianexpress.com/2022/09/Untitled-design-15-2.jpg?w=210"
+      },
+      {
+         "id": "14",
+         "title": "Self-exiled Hong Kong democrat sentenced to 3 1/2 years in jail in absentia",
+         "image": "https://images.indianexpress.com/2022/09/Hongkong_1200.jpg?w=210"
+      },
+      {
+         "id": "15",
+         "title": "‘Where’s Jackie?’: Joe Biden asks if deceased lawmaker is at White House event",
+         "image": "https://images.indianexpress.com/2022/09/joe-biden-3.jpg?w=210"
+      },
+      {
+         "id": "16",
+         "title": "Tensions in Iran Spill Across the Border Into Iraq",
+         "image": "https://images.indianexpress.com/2022/09/iran-woman-1.jpg?w=210"
+      }
+   ],
+   "sports": [
+            {
+               "id": 17,
+               "author": null,
+               "title": "India Legends vs Sri Lanka Legends Live Score Updates: Naman Ojha scores 100 in Road Safety World Series Final - The Indian Express",
+               "description": null,
+               "url": "https://news.google.com/__i/rss/rd/articles/CBMiiAFodHRwczovL2luZGlhbmV4cHJlc3MuY29tL2FydGljbGUvc3BvcnRzL2NyaWNrZXQvaW5kaWEtbGVnZW5kcy12cy1zcmktbGFua2EtbGVnZW5kcy1yb2FkLXNhZmV0eS13b3JsZC1zZXJpZXMtZmluYWwtbGl2ZS11cGRhdGVzLTgxODQ1MzMv0gEA?oc=5",
+               "urlToImage": null,
+               "publishedAt": "2022-10-01T16:35:30Z",
+               "content": null
+            },
+            {
+               "id": 18,
+               "author": "NDTV Sports Desk",
+               "title": "\"Poor Decision\": Yuvraj Singh Lashes Out At Controversial Run-Out Of Pooja Vastrakar In Women's Asia.. - NDTV Sports",
+               "description": "During India Women's Asia Cup match against Sri Lanka on Saturday, Pooja Vastrakar was adjudged run-out by the third umpire in what was a tight call.",
+               "url": "https://sports.ndtv.com/cricket/poor-decision-yuvraj-singh-lashes-out-at-controversial-run-out-of-pooja-vastrakar-in-womens-asia-cup-3395632",
+               "urlToImage": "https://c.ndtvimg.com/2022-10/6qq3e018_pooja-vastrakar-twitter-_625x300_01_October_22.jpg",
+               "publishedAt": "2022-10-01T16:00:56Z",
+               "content": "Pooja Vastrakar had an unfortunate outing with the bat on Saturday as the player was adjudged run-out by the third umpire in what was a tight call. It happened on the penultimate ball of the Indian i… [+1626 chars]"
+            },
+            {
+               "id": 19,
+               "author": null,
+               "title": "Sarfaraz ton lights up first day after pacers put ROI in command | Cricbuzz.com - Cricbuzz - Cricbuzz",
+               "description": "Sarfaraz hit an unbeaten 125 after Saurashtra were bowled out for a paltry 98",
+               "url": "https://www.cricbuzz.com/cricket-news/123987/sarfaraz-ton-lights-up-first-day-after-pacers-put-roi-in-command-cricbuzzcom",
+               "urlToImage": "//m.cricbuzz.com/a/img/v1/600x400/i1/c235456/88-of-sarfarazs-125-came-in-boundaries.jpg",
+               "publishedAt": "2022-10-01T15:27:30Z",
+               "content": "Hosts and defending champions Saurashtra suffered embarrassment on the first day of the Irani Cup as they were bowled out for just 98 in the first innings. After the pacers' demolition job with the b… [+1658 chars]"
+            },
+            {
+               "id": 20,
+               "author": "Aditya Kumar",
+               "title": "\"Grateful To God To Have Survived A Possible Disaster\": Unmukt Chand Shares Pics Of Eye Injury - NDTV Sports",
+               "description": "Former India Under-19 captain Unmukt Chand has suffered an eye injury in the United States while playing cricket.",
+               "url": "https://sports.ndtv.com/cricket/grateful-to-god-to-have-survived-a-possible-disaster-unmukt-chand-shares-pics-of-eye-injury-3395276",
+               "urlToImage": "https://c.ndtvimg.com/2022-10/jfurdtpo_unmukht-chand-_625x300_01_October_22.jpg",
+               "publishedAt": "2022-10-01T13:56:03Z",
+               "content": "Former India Under-19 captain Unmukt Chand has suffered an eye injury in the United States while playing cricket. The 29-year-old shared a couple of pictures of his injury on social media. In the sha… [+1557 chars]"
+            },
+            {
+               "id": 21,
+               "author": "Vishesh Roy",
+               "title": "Jasprit Bumrah Has \"Gone To NCA, Waiting For An Official Confirmation\": Rahul Dravid - NDTV Sports",
+               "description": "Ahead of the second T20I against South Africa, head coach Rahul Dravid provided an update on Jasprit Bumrah, saying the pacer has gone to the National Cricket Academy and the management is waiting for an official word.",
+               "url": "https://sports.ndtv.com/india-vs-south-africa-2022-23/jasprit-bumrah-has-gone-to-nca-waiting-for-an-official-confirmation-rahul-dravid-3395135",
+               "urlToImage": "https://c.ndtvimg.com/2022-09/ab4pmbko_jasprit-bumrah-afp_625x300_30_September_22.jpg?im=FaceCrop,algorithm=dnn,width=1200,height=675",
+               "publishedAt": "2022-10-01T13:55:30Z",
+               "content": "Team India's preparation for the upcoming T20 World Cup received a major jolt earlier this week as premier speedster Jasprit Bumrah was ruled out of the ongoing three-match T20I series against South … [+1574 chars]"
+            },
+            {
+               "id": 22,
+               "author": "James Cormack",
+               "title": "Arsenal 3-1 Tottenham: Player ratings as Gunners claim huge derby victory - Pain In The Arsenal",
+               "description": "Arsenal claimed local bragging rights on Saturday afternoon as they beat ten-man Tottenham 3-1 at the Emirates. The Gunners began the contest on the front ...",
+               "url": "https://paininthearsenal.com/2022/10/01/arsenal-3-1-tottenham-player-ratings-gunners-claim-derby-victory/",
+               "urlToImage": "https://images2.minutemediacdn.com/image/fetch/w_2000,h_2000,c_fit/https%3A%2F%2Fpaininthearsenal.com%2Fwp-content%2Fuploads%2Fgetty-images%2F2017%2F07%2F1429323872.jpeg",
+               "publishedAt": "2022-10-01T13:22:00Z",
+               "content": "Arsenal claimed local bragging rights on Saturday afternoon as they beat ten-man Tottenham 3-1 at the Emirates.\r\nThe Gunners began the contest on the front foot but the opening goal came through an u… [+1718 chars]"
+            },
+            {
+               "id": 23,
+               "author": "India.com Sports Desk",
+               "title": "LIVE | India ODI Squad Announcement Updates: Dravid Provides Big Update On Bumrah's Injury - India.com",
+               "description": "LIVE | India ODI Squad Announcement Updates: Follow all LIVE updates, news and Commentary.",
+               "url": "https://www.india.com/sports/live-india-odi-squad-announcement-updates-ind-v-sa-captain-shikhar-dhawan-sanju-samson-vc-oct-1-sat-bcci-india-v-south-africa-schedule-jasprit-bumrah-t20-wc-rohit-sharma-pc-live-streaming-cricket-news-5660659/",
+               "urlToImage": "https://static.india.com/wp-content/uploads/2022/09/LIVE-India-ODI-Squad-1.jpg",
+               "publishedAt": "2022-10-01T12:13:58Z",
+               "content": "Reports suggest that the Board of Control of Cricket in India (BCCI) would be announcing the ODI squad today. It is believed that Shikhar Dhawan would lead the side and Sanju Samson would be his depu… [+3014 chars]"
+            },
+            {
+               "id": 24,
+               "author": "F1",
+               "title": "Ferrari relishing three-way fight with Red Bull and Mercedes for Singapore GP honours - Formula 1",
+               "description": "Ferrari, Red Bull and Mercedes will all be in the mix for the race win at this weekend’s Singapore Grand Prix, believes the Italian team’s Racing Director, Laurent Mekies.",
+               "url": "https://www.formula1.com/en/latest/article.ferrari-relishing-three-way-fight-with-red-bull-and-mercedes-for-singapore.2elXAtpSC93wVMAr4FlDga.html",
+               "urlToImage": "https://www.formula1.com/content/dam/fom-website/manual/Misc/2022manual/2022Races/Singapore/Friday/leclerc-singapore.jpg",
+               "publishedAt": "2022-10-01T11:36:26Z",
+               "content": "Ferrari, Red Bull and Mercedes will all be in the mix for the race win at this weekends Singapore Grand Prix, believes the Italian teams Racing Director, Laurent Mekies.\r\nFerrari ended Fridays runnin… [+2208 chars]"
+            },
+            {
+               "id": 25,
+               "author": "Jon Wilde",
+               "title": "Ferrari warn it is 'game over' for F1 cost cap if strict penalties aren't issued - Planet F1",
+               "description": "\"A very vital test for the cost cap,\" is how Laurent Mekies describes the storm Red Bull are at the centre of.",
+               "url": "https://www.planetf1.com/news/ferrari-laurent-mekies-cost-cap-test/",
+               "urlToImage": "https://d3cm515ijfiu6w.cloudfront.net/wp-content/uploads/2022/10/01113114/Laurent-Mekies-gestures-during-press-conference-planetF1.jpg",
+               "publishedAt": "2022-10-01T11:30:54Z",
+               "content": "Ferraris Laurent Mekies has doubled down on his colleague Mattia Binottos assertion that Formula 1s budget cap must be enforced robustly.\r\nOn two previous occasions this year, in May and August, team… [+2334 chars]"
+            },
+            {
+               "id": 26,
+               "author": "https://www.facebook.com/anshuroy23",
+               "title": "India vs South Africa Match Prediction- Who Will Win Today's Match Between IND And SA, South Africa Tour Of India 2022, 2nd T20I - Cricket Addictor",
+               "description": "India vs South Africa Match Prediction- Who Will Win Today’s Match Between IND And SA, South Africa Tour Of India 2022, 2nd T20I",
+               "url": "https://cricketaddictor.com/south-africa-tour-of-india-2022/india-vs-south-africa-match-prediction-who-will-win-todays-match-between-ind-and-sa-south-africa-tour-of-india-2022-2nd-t20i/",
+               "urlToImage": "https://i0.wp.com/cricketaddictor.com/wp-content/uploads/2022/09/India-vs-South-Africa.jpg",
+               "publishedAt": "2022-10-01T11:10:23Z",
+               "content": "India take on South Africa in the second T20I in Guwahati on Sunday, October 2. The hosts won the first T20I by 8 wickets chasing 107 on a tricky wicket. The visitors need to win the second T20I to k… [+3237 chars]"
+            },
+            {
+               "id": 27,
+               "author": "HT Sports Desk",
+               "title": "'Agar practice karte ho toh apply kyun nahi karte?': Akram asks Yousuf bluntly - Hindustan Times",
+               "description": "Wasim Akram posed a rather straightforward question to Pakistan's batting coach Mohammad Yousuf following the side's 8-wicket loss to England in the sixth T20I in Lahore. | Cricket",
+               "url": "https://www.hindustantimes.com/cricket/practice-karte-ho-toh-imply-kyun-nahi-karte-wasim-akram-bluntly-asks-mohammad-yousuf-on-pakistan-s-batting-here-s-how-he-replies-101664619952575.html",
+               "urlToImage": "https://images.hindustantimes.com/img/2022/10/01/1600x900/akram-yousuf_1664621892668_1664621892874_1664621892874.jpg",
+               "publishedAt": "2022-10-01T11:00:36Z",
+               "content": "Pakistan faced a heavy loss in the sixth T20I of the series against England, forcing a decider in the seven-match series on Friday. The visitors chased down a 170-run target in merely 14.3 overs in L… [+2910 chars]"
+            },
+            {
+               "id": 28,
+               "author": "HT Sports Desk",
+               "title": "Watch: Deepti's incredible 360-degree turn to dismiss SL batter with direct hit - Hindustan Times",
+               "description": "Deepti Sharma inflicted a glorious run out as she took a 360-degree turn and smashed a direct hit to dismiss Sri Lanka's Malsha Shehani in the Women's Asia Cup. | Cricket",
+               "url": "https://www.hindustantimes.com/cricket/watch-deepti-sharma-makes-incredible-360-degree-turn-to-dismiss-sl-batter-with-stunning-direct-hit-in-asia-cup-match-101664617220733.html",
+               "urlToImage": "https://images.hindustantimes.com/img/2022/10/01/1600x900/deepti_1664618409516_1664618409871_1664618409871.jpg",
+               "publishedAt": "2022-10-01T10:10:54Z",
+               "content": "You can't keep them apart for too long. Merely over a week since Deepti Sharma drew the attention of cricket fraternity worldwide by running Charlotte Dean out at the non-striker's end, she engaged i… [+1754 chars]"
+            },
+            {
+               "id": 29,
+               "author": "More by Vicky Singh",
+               "title": "WI-W vs NZ-W Dream11 Prediction, Fantasy Cricket Tips, Dream11 Team, Playing XI, Pitch Report, Injury Update- New Zealand Women Tour of West Indies, 2nd T20I - Cricket Addictor",
+               "description": "WI-W vs NZ-W Dream11 Prediction, Fantasy Cricket Tips, Dream11 Team, Playing XI, Pitch Report, Injury Update- New Zealand Women Tour of West Indies, 2nd T20I",
+               "url": "https://cricketaddictor.com/fantasy-cricket/wi-w-vs-nz-w-dream11-prediction-fantasy-cricket-tips-dream11-team-playing-xi-pitch-report-injury-update-new-zealand-women-tour-of-west-indies-2nd-t20i/",
+               "urlToImage": "https://i0.wp.com/cricketaddictor.com/wp-content/uploads/2022/01/West-Indies-Women.jpg",
+               "publishedAt": "2022-10-01T10:08:50Z",
+               "content": "WI-W vs NZ-W Dream11 Prediction, Fantasy Cricket Tips, Dream11 Team, Playing XI, Pitch Report, Injury Update of the match between West Indies Women and New Zealand Women. They will play against each … [+4487 chars]"
+            },
+            {
+               "id": 30,
+               "author": "Abhimanyu Bose",
+               "title": "Ben Stokes' Retort To Harsha Bhogle's Criticism Of English Media Over Deepti Sharma's Run-Out - NDTV Sports",
+               "description": "Ben Stokes took to Twitter to respond to Harsha Bhogle's criticism of English media for their reactions to Deepti Sharma's run-out of Charlie Dean at the non-striker's end.",
+               "url": "https://sports.ndtv.com/cricket/ben-stokes-retort-to-harsha-bhogles-criticism-of-english-media-over-deepti-sharmas-run-out-3394855",
+               "urlToImage": "https://c.ndtvimg.com/2022-05/qeuubv7o_ben-stokes-afp_625x300_03_May_22.jpg?im=FeatureCrop,algorithm=dnn,width=1200,height=675",
+               "publishedAt": "2022-10-01T10:06:33Z",
+               "content": "A day after Harsha Bhogle put out a strongly worded Twitter thread criticising the English media for spreading \"vitriol\" towards Deepti Sharma after her run-out of Charlie Dean at Lord's, England Tes… [+2260 chars]"
+            },
+            {
+               "id": 31,
+               "author": "James Dielhenn",
+               "title": "Fabio Quartararo “is the meat in the Ducati sandwich” - Crash",
+               "description": "Fabio Quartararo produced a “miracle” to qualify for the Thailand MotoGP on the second row but is surrounded by Ducatis, says BT Sport’s Michael Laverty.",
+               "url": "https://www.crash.net/motogp/news/1013310/1/fabio-quartararo-meat-ducati-sandwich",
+               "urlToImage": "https://cdn.crash.net/styles/large_article/s3/pa/3221059.0008.jpg?itok=M10mPPIB",
+               "publishedAt": "2022-10-01T09:13:57Z",
+               "content": "Marco Bezzecchi took a shock pole position in Buriram on Saturday, while reigning MotoGP champion Quartararo was fourth.\r\nHe leads the 2022 MotoGP standings by 18 points but Francesco Bagnaia will st… [+1330 chars]"
+            },
+            {
+               "id": 32,
+               "author": null,
+               "title": "Blues capitulate for 76 as WA bowlers dominate | Marsh One-Day Cup 2022-23 - cricket.com.au",
+               "description": "Download our app: https://app.cricket.com.au/New South Wales fell for 76, their lowest-ever one-day score, as WA quicks Jhye Richardson and Jason Behrendorff...",
+               "url": "https://www.youtube.com/watch?v=Mbvn-u7WJHM",
+               "urlToImage": "https://i.ytimg.com/vi/Mbvn-u7WJHM/hqdefault.jpg",
+               "publishedAt": "2022-10-01T09:00:37Z",
+               "content": null
+            },
+            {
+               "id": 33,
+               "author": "More by Vicky Singh",
+               "title": "GRA vs MAD Dream11 Prediction, Fantasy Cricket Tips, Dream11 Team, Playing XI, Pitch Report, Injury Update- FanCode ECT T10 Spain - Cricket Addictor",
+               "description": "GRA vs MAD Dream11 Prediction, Fantasy Cricket Tips, Dream11 Team, Playing XI, Pitch Report, Injury Update- FanCode ECT T10 Spain",
+               "url": "https://cricketaddictor.com/fantasy-cricket/gra-vs-mad-dream11-prediction-fantasy-cricket-tips-dream11-team-playing-xi-pitch-report-injury-update-fancode-ect-t10-spain/",
+               "urlToImage": "https://i0.wp.com/cricketaddictor.com/wp-content/uploads/2021/10/ECS-T10-Spain-Dream11-Prediction-Fantasy-Cricket-Tips-Dream11-Team.jpg",
+               "publishedAt": "2022-10-01T08:22:05Z",
+               "content": "GRA vs MAD Dream11 Prediction, Fantasy Cricket Tips, Dream11 Team, Playing XI, Pitch Report, Injury Update of FanCode ECT T10 Spain match between Gracia and Madrid CC.\r\nGRA vs MAD FanCode ECT T10 Spa… [+3702 chars]"
+            },
+            {
+               "id": 34,
+               "author": null,
+               "title": "Chris Silverwood acknowledges expectations after Asia Cup triumph | Cricbuzz.com - Cricbuzz - Cricbuzz",
+               "description": "Sri Lanka are travelling to Australia two weeks prior to their opening game against Namibia on October 16",
+               "url": "https://www.cricbuzz.com/cricket-news/123982/silverwood-acknowledges-expectations-after-asia-cup-triumph",
+               "urlToImage": "http://www.cricbuzz.com/a/img/v1/600x400/i1/c243742/sri-lanka-are-the-reigning-asi.jpg",
+               "publishedAt": "2022-10-01T08:08:19Z",
+               "content": "Sri Lanka are the reigning Asian Champions. © AFP\r\nSri Lanka head coach Chris Silverwood said that the think-tank is focusing on specific skills during training sessions by keeping in mind the likely… [+3841 chars]"
+            },
+            {
+               "id": 35,
+               "author": "Sports Desk",
+               "title": "'They send me when we get beaten badly': Pakistan bowling coach Shaun Tait says in post-match press conference - The Indian Express",
+               "description": "The statement created discomfort as the Pakistan Cricket Board (PCB) moderator switched off the microphone and asked Tait if he was fine.",
+               "url": "https://indianexpress.com/article/sports/cricket/pak-vs-eng-they-send-me-when-we-get-beaten-badly-pakistan-bowling-coach-shaun-tait-in-post-match-press-conf-8184189/",
+               "urlToImage": "https://images.indianexpress.com/2022/10/Untitled-design-14.jpg",
+               "publishedAt": "2022-10-01T07:54:26Z",
+               "content": "Pakistan bowling coach Shaun Tait’s reaction after the team’s defeat in the 6th T20I against England on Friday stunned everyone. Tait, who was sent to address the media after their 8-wicket loss at t… [+2271 chars]"
+            },
+            {
+               "id": 36,
+               "author": "Reuters, Dawn.com",
+               "title": "Antonio Inoki, Japanese pro-wrestler politician, dies aged 79 - DAWN.com",
+               "description": "The wrestler became one of the biggest names on Japan’s pro-wrestling circuit in the 1960s; he visited Pakistan several times.",
+               "url": "https://www.dawn.com",
+               "urlToImage": "https://i.dawn.com/large/2022/10/011127039486833.jpg?r=112730",
+               "publishedAt": "2022-10-01T07:24:51Z",
+               "content": "Antonio Inoki, a Japanese professional wrestling star turned politician, widely known for his match with Muhammad Ali and ties to North Korea, has died aged 79, after years of battling a rare disease… [+3680 chars]"
+            }
+         ]
+}
