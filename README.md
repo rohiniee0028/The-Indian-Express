@@ -1,4 +1,4 @@
-# Sugar Cosmetics Clone
+# The Indian Express Clone
 Got an individual project to clone Indian Express website. Indian Express Limited is an Indian news media publishing company. It publishes several widely circulated dailies, including The Indian Express and The Financial Express in English, the Loksatta in Marathi and the Jansatta in Hindi.
 
 In this project i have made the foolowing things :
@@ -13,7 +13,7 @@ In this project i have made the foolowing things :
 
 ---
 
-### [click here to run live demo](https://taupe-pony-ad84a9.netlify.app/)
+### [click here to run live demo](https://rkee0054.netlify.app/)
 
 ## Tech stacks used :
 * **HTML**
