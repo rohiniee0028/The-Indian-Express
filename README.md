@@ -23,7 +23,10 @@ In this project i have made the foolowing things :
 * **REACT JS**
 
 
-![alt Icons](https://p92.com/binaries/content/gallery/p92website/technologies/htmlcssjs-details.png)
+![alt Icons](https://t4.ftcdn.net/jpg/03/58/42/75/360_F_358427509_EFpw8u9515zgHy6cPHsOJaCz3ueNts5y.jpg)
+ 
+![alt Icons](https://blog.dastasoft.com/assets/posts/preview/chakraui-react.webp)
+
 ***
 ## Landing Page :
 - The Landing Page of Indian Express website displays various news like india news , world news , latest news, top news.
